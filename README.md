@@ -2,7 +2,7 @@
 
 Portfolio website for **Ifaf Web Studio**: fast, mobile-first websites for tour companies, travel agencies, hotels and local businesses, in **English and Arabic**.
 
-🔗 **Live:** https://ifaf-studio-v6.vercel.app
+🔗 **Live:** https://ifafwebstudio.vercel.app
 
 ## Features
 - Single-page site in plain HTML, CSS and JavaScript (no framework, no build step)
