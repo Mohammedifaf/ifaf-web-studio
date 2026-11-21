@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ifaf Web Studio · Websites that get businesses booked</title>
+<meta name="description" content="Mohammed Ifaf builds fast, bilingual (Arabic + English) business websites for India and the Gulf, with WhatsApp booking and Google setup. Free sample homepage first.">
+<meta property="og:title" content="Ifaf Web Studio · Websites that get businesses booked">
+<meta property="og:description" content="Fast, bilingual business websites for India and the Gulf. See your free sample homepage before you pay.">
+<meta property="og:image" content="img/76adventure-desktop.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f4ef; --surface:#ffffff; --ink:#0b0b0c; --ink2:#3f4247; --muted:#80838a; --line:#e2e1da;
+  --acc:#12b76a; --acc-ink:#0a6b3f; --acc-soft:#e3f6ec; --dark:#0d0e10; --dark2:#16181b;
+  --r:18px; --mono:"Geist Mono",ui-monospace,monospace;
+  --sans:"Geist",system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html[dir=rtl] body{font-family:"IBM Plex Sans Arabic",var(--sans)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.02em;text-transform:uppercase}
+html[dir=rtl] .mono{font-family:"IBM Plex Sans Arabic",sans-serif;letter-spacing:0;text-transform:none;font-size:14px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--acc);display:inline-block;box-shadow:0 0 0 0 rgba(18,183,106,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(18,183,106,.55)}70%{box-shadow:0 0 0 9px rgba(18,183,106,0)}100%{box-shadow:0 0 0 0 rgba(18,183,106,0)}}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .2s,background .2s,color .2s;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-line{border-color:var(--line);background:var(--surface)}
+.btn-acc{background:var(--acc);color:#04130b}
+.btn svg{width:18px;height:18px}
+html[dir=rtl] .arr{transform:scaleX(-1)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);background:rgba(244,244,239,.78);border-bottom:1px solid transparent;transition:border-color .3s}
+nav.scrolled{border-color:var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:-.02em}
+.logo b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--ink);color:#fff;font-size:15px}
+.logo small{font-weight:500;color:var(--muted);font-size:14px}
+.links{display:flex;gap:28px;font-size:15px;color:var(--ink2)}
+.links a:hover{color:var(--ink)}
+.nav-r{display:flex;align-items:center;gap:10px}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.lang button{border:0;background:none;font:600 13px var(--sans);padding:6px 11px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed=true]{background:var(--ink);color:#fff}
+.lang button.ar{font-family:"IBM Plex Sans Arabic",sans-serif}
+.nav-cta{padding:10px 16px;font-size:14px}
+
+/* HERO */
+.hero{padding:70px 0 40px}
+.status{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink2)}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:end;margin-top:26px}
+h1{font-size:clamp(44px,7.2vw,96px);line-height:.98;letter-spacing:-.045em;font-weight:650}
+html[dir=rtl] h1{letter-spacing:0;line-height:1.2;font-weight:700}
+h1 .u{position:relative;white-space:nowrap}
+h1 .u::after{content:"";position:absolute;inset-inline:0;bottom:.06em;height:.12em;background:var(--acc);border-radius:4px;transform:scaleX(0);transform-origin:left;animation:grow 1s .5s forwards cubic-bezier(.2,.8,.2,1)}
+html[dir=rtl] h1 .u::after{transform-origin:right}
+@keyframes grow{to{transform:scaleX(1)}}
+.hero p.lead{font-size:19px;color:var(--ink2);max-width:440px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero .note{margin-top:16px;color:var(--muted);font-size:14px}
+
+/* BROWSER */
+.stage{margin-top:56px;position:relative}
+.browser{background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:0 40px 80px -30px rgba(10,20,15,.28),0 2px 0 rgba(0,0,0,.02);overflow:hidden;transform-origin:50% 0;transition:transform .1s linear}
+.bar{display:flex;align-items:center;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);background:#fbfbf8}
+.lights{display:flex;gap:7px}
+.lights i{width:11px;height:11px;border-radius:50%;background:#e2e1da}
+.lights i:nth-child(1){background:#ff6058}.lights i:nth-child(2){background:#ffbd2e}.lights i:nth-child(3){background:#28c840}
+.url{flex:1;max-width:520px;margin-inline:auto;display:flex;align-items:center;gap:9px;background:#f0f0ea;border-radius:10px;padding:8px 14px;font-family:var(--mono);font-size:14px;color:var(--ink2);direction:ltr}
+.url svg{width:13px;height:13px;color:var(--acc-ink);flex:none}
+.url .caret{width:1.5px;height:16px;background:var(--ink);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.live{display:inline-flex;align-items:center;gap:7px;font:500 12px var(--mono);color:var(--acc-ink);background:var(--acc-soft);padding:5px 10px;border-radius:999px;white-space:nowrap}
+.screen{position:relative;aspect-ratio:16/10;background:#eceae3;overflow:hidden}
+.screen img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0;transform:scale(1.04);transition:opacity .9s ease,transform 6s ease}
+.screen img.on{opacity:1;transform:scale(1)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-size:14px;cursor:pointer;font-family:inherit;color:var(--ink2);transition:all .2s;display:inline-flex;gap:7px;align-items:center}
+.chip:hover{border-color:#c9c8bf;color:var(--ink)}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.float{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:0 18px 40px -18px rgba(0,0,0,.25);font-size:14px;font-weight:550;display:flex;align-items:center;gap:10px;animation:bob 5s ease-in-out infinite}
+.float .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-size:15px;background:var(--acc-soft)}
+.f1{inset-inline-start:-34px;top:22%}
+.f2{inset-inline-end:-30px;top:48%;animation-delay:-2s}
+.f3{inset-inline-start:8%;bottom:-24px;animation-delay:-3.5s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+
+/* NUMBERS */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:90px}
+.num{padding:30px 24px;border-inline-end:1px solid var(--line)}
+.num:last-child{border-inline-end:0}
+.num b{display:block;font-size:46px;font-weight:650;letter-spacing:-.04em;line-height:1}
+.num span{color:var(--muted);font-size:15px;margin-top:8px;display:block}
+
+/* SECTION HEAD */
+section{padding:110px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+.sh .mono{color:var(--muted);display:block;margin-bottom:14px}
+h2{font-size:clamp(34px,4.6vw,58px);line-height:1.02;letter-spacing:-.04em;font-weight:650;max-width:720px}
+html[dir=rtl] h2{letter-spacing:0;line-height:1.3}
+.sh p{max-width:380px;color:var(--ink2)}
+
+/* WORK INDEX */
+.work{background:var(--dark);color:#f2f2ee;border-radius:32px;margin-inline:12px;padding:110px 0}
+.work .sh .mono{color:#7d8188}
+.work .sh p{color:#a9acb2}
+.index{border-top:1px solid #2a2c30}
+.row{display:grid;grid-template-columns:60px 1.4fr 1fr 1.3fr 40px;align-items:center;gap:20px;padding:26px 6px;border-bottom:1px solid #2a2c30;cursor:pointer;position:relative;transition:padding .35s cubic-bezier(.2,.8,.2,1),background .3s}
+.row:hover{padding-inline:22px;background:#15171a}
+.row>*{min-width:0}
+.row .n{font:500 13px var(--mono);color:#6d7177}
+.row .t{font-size:clamp(22px,2.6vw,32px);font-weight:600;letter-spacing:-.03em;line-height:1.1}
+html[dir=rtl] .row .t{letter-spacing:0}
+.row .t small{display:block;font-size:14px;color:#8b8f95;font-weight:400;letter-spacing:0;margin-top:5px}
+.row .c{color:#a9acb2;font-size:15px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags span{font-size:12.5px;border:1px solid #33363b;border-radius:999px;padding:4px 10px;color:#c9ccd1}
+.tags span.g{border-color:rgba(18,183,106,.45);color:#5fe0a2}
+.row .go{width:40px;height:40px;border-radius:50%;border:1px solid #33363b;display:grid;place-items:center;transition:all .3s}
+.row:hover .go{background:var(--acc);border-color:var(--acc);color:#04130b;transform:rotate(-45deg)}
+html[dir=rtl] .row:hover .go{transform:rotate(45deg)}
+.row .thumb{display:none}
+.peek{position:fixed;left:0;top:0;width:380px;aspect-ratio:16/10;border-radius:14px;overflow:hidden;pointer-events:none;z-index:60;opacity:0;transform:translate(-50%,-50%) scale(.85);transition:opacity .25s,transform .25s;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);border:1px solid #2a2c30}
+.peek.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.peek img{width:100%;height:100%;object-fit:cover;object-position:top}
+
+/* PROCESS / CHAT */
+.proc{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.steps{display:grid;gap:4px}
+.step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}
+.step:first-child{border-top:1px solid var(--line)}
+.step .k{font:500 13px var(--mono);color:var(--acc-ink);background:var(--acc-soft);border-radius:999px;height:28px;display:grid;place-items:center;width:48px}
+.step h3{font-size:21px;letter-spacing:-.02em;font-weight:600}
+.step p{color:var(--ink2);font-size:16px;margin-top:4px}
+.phone{width:min(380px,100%);margin-inline:auto;background:#0b141a;border-radius:42px;padding:12px;box-shadow:0 40px 80px -30px rgba(0,0,0,.45);border:1px solid #1d2a31}
+.ph-top{display:flex;align-items:center;gap:11px;background:#1f2c33;color:#e9edef;padding:14px 16px;border-radius:30px 30px 0 0}
+.ph-top .av{width:36px;height:36px;border-radius:50%;object-fit:cover}
+.ph-top b{font-size:15px;font-weight:600;display:block}
+.ph-top small{font-size:12px;color:#8696a0}
+.ph-body{background:#0b141a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='2' cy='2' r='1' fill='%23182229'/%3E%3C/svg%3E");height:470px;padding:16px 12px;display:flex;flex-direction:column;gap:8px;overflow:hidden;border-radius:0 0 30px 30px;direction:ltr}
+.msg{max-width:82%;padding:8px 11px 6px;border-radius:10px;font-size:14.5px;line-height:1.4;color:#e9edef;opacity:0;transform:translateY(10px) scale(.98);transition:all .45s cubic-bezier(.2,.8,.2,1)}
+.msg.show{opacity:1;transform:none}
+.msg.in{background:#202c33;align-self:flex-start;border-top-left-radius:2px}
+.msg.out{background:#005c4b;align-self:flex-end;border-top-right-radius:2px}
+.msg time{display:block;text-align:right;font-size:11px;color:#8fa39d;margin-top:2px}
+.msg .lnk{color:#53bdeb}
+.msg .card{background:#0a453a;border-radius:8px;overflow:hidden;margin-bottom:6px}
+.msg .card img{aspect-ratio:16/7;object-fit:cover;object-position:top;width:100%}
+.msg .card div{padding:6px 8px;font-size:12.5px;color:#cfe3dc}
+.typing{align-self:flex-start;background:#202c33;border-radius:10px;padding:10px 12px;display:none;gap:4px}
+.typing.show{display:flex}
+.typing i{width:6px;height:6px;border-radius:50%;background:#8696a0;animation:ty 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes ty{0%,60%,100%{opacity:.3;transform:none}30%{opacity:1;transform:translateY(-3px)}}
+
+/* SERVICES */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.s{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .3s,box-shadow .3s}
+.s:hover{transform:translateY(-4px);box-shadow:0 24px 50px -30px rgba(0,0,0,.25)}
+.s .top{display:flex;justify-content:space-between;align-items:start}
+.s .ico{width:46px;height:46px;border-radius:13px;background:var(--bg);display:grid;place-items:center;font-size:22px}
+.s .mono{color:var(--muted)}
+.s h3{font-size:22px;letter-spacing:-.02em;margin:26px 0 6px;font-weight:600}
+.s p{color:var(--ink2);font-size:15.5px}
+.s.big{grid-column:span 2;grid-row:span 2;background:var(--ink);color:#fff;border-color:var(--ink);position:relative;overflow:hidden}
+.s.big p{color:#b9bcc2}
+.s.big .ico{background:#1d1f23}
+.s.big .mono{color:#7d8188}
+.s.big .pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.s.big .shot{position:absolute;inset-inline-end:34px;top:34px;width:170px;border-radius:18px;border:5px solid #1d1f23;box-shadow:0 30px 50px -20px rgba(0,0,0,.7);transform:rotate(4deg)}
+html[dir=rtl] .s.big .shot{transform:rotate(-4deg)}
+.s.big>div:last-child{max-width:calc(100% - 210px)}
+@media (max-width:680px){.s.big .shot{display:none}.s.big>div:last-child{max-width:none}}
+.s.big .pills span{border:1px solid #33363b;border-radius:999px;padding:6px 12px;font-size:13.5px;color:#d6d8dc}
+
+/* BILINGUAL */
+.bi{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.bi .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:36px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.bi .card .mono{color:var(--muted)}
+.bi .card .big{font-size:clamp(28px,3.4vw,42px);line-height:1.15;letter-spacing:-.03em;font-weight:600;margin-top:20px}
+.bi .card.ar{direction:rtl;text-align:right;font-family:"IBM Plex Sans Arabic",sans-serif;background:var(--acc-soft);border-color:#c7ead8}
+.bi .card.ar .big{letter-spacing:0;line-height:1.4}
+.bi .card .mini{display:flex;gap:8px;margin-top:22px;flex-wrap:wrap}
+.bi .card .mini span{background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600}
+.bi .card.ar .mini span{background:var(--acc-ink)}
+
+/* CLOCKS */
+.clocks{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.clk{padding:26px 22px;border-inline-end:1px solid var(--line)}
+.clk:last-child{border-inline-end:0}
+.clk .mono{color:var(--muted)}
+.clk b{display:block;font:500 34px var(--mono);letter-spacing:-.02em;margin-top:10px;direction:ltr;text-align:start}
+.clk.me{background:var(--ink);color:#fff}
+.clk.me .mono{color:#8b8f95}
+.perks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.perk{padding:22px;border-radius:var(--r);border:1px solid var(--line)}
+.perk b{display:block;font-size:17px;font-weight:600;margin-bottom:4px}
+.perk span{color:var(--ink2);font-size:15px}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+.me-card{position:relative}
+.me-card img{border-radius:26px;aspect-ratio:4/5;object-fit:cover;width:100%;filter:saturate(1.05)}
+.me-card .tag{position:absolute;inset-inline-start:18px;bottom:18px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);padding:10px 14px;border-radius:12px;display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600}
+.about h2{margin-bottom:22px}
+.about p{color:var(--ink2);font-size:18px;margin-bottom:14px;max-width:560px}
+.niches{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.niches span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-size:14.5px}
+
+/* FAQ */
+.faq{max-width:860px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:26px 0;display:flex;justify-content:space-between;gap:20px;font-size:20px;font-weight:550;letter-spacing:-.015em}
+summary::-webkit-details-marker{display:none}
+summary .pm{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:transform .3s;font-weight:400}
+details[open] summary .pm{transform:rotate(45deg);background:var(--ink);color:#fff;border-color:var(--ink)}
+details p{padding:0 0 26px;color:var(--ink2);max-width:700px}
+
+/* CTA */
+.cta{background:var(--dark);color:#f2f2ee;border-radius:32px;margin:0 12px 12px;padding:100px 0}
+.cta-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:start}
+.cta h2{font-size:clamp(40px,6vw,80px)}
+.cta .sub{color:#a9acb2;margin-top:18px;font-size:18px;max-width:440px}
+.contacts{display:grid;gap:10px;margin-top:34px;max-width:440px}
+.contacts a{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border:1px solid #2a2c30;border-radius:14px;transition:background .2s}
+.contacts a:hover{background:#17191c}
+.contacts a span{color:#8b8f95;font-size:14px}
+form{background:#15171a;border:1px solid #2a2c30;border-radius:24px;padding:30px}
+form h3{font-size:22px;letter-spacing:-.02em;font-weight:600}
+form .fs{color:#8b8f95;font-size:14.5px;margin:4px 0 22px}
+label{display:block;font-size:13.5px;color:#a9acb2;margin:14px 0 7px}
+input,select{width:100%;background:#0d0e10;border:1px solid #2a2c30;border-radius:12px;padding:13px 14px;color:#fff;font:16px inherit;font-family:inherit;outline:none;transition:border-color .2s}
+input:focus,select:focus{border-color:var(--acc)}
+.types{display:flex;flex-wrap:wrap;gap:7px}
+.types label{margin:0}
+.types input{display:none}
+.types span{display:inline-block;border:1px solid #2a2c30;border-radius:999px;padding:8px 13px;font-size:14px;color:#c9ccd1;cursor:pointer;transition:all .2s}
+.types input:checked+span{background:var(--acc);border-color:var(--acc);color:#04130b;font-weight:600}
+form .btn{width:100%;justify-content:center;margin-top:22px}
+footer{padding:34px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+.wa-float{position:fixed;inset-inline-end:20px;bottom:20px;z-index:70;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.55);transition:transform .2s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .links{display:none}
+  .hero-grid,.proc,.about,.cta-grid,.bi{grid-template-columns:1fr;gap:36px}
+  .svc{grid-template-columns:1fr 1fr}
+  .s.big{grid-column:span 2}
+  .nums{grid-template-columns:1fr 1fr}
+  .num:nth-child(2){border-inline-end:0}
+  .num:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .clocks{grid-template-columns:repeat(3,1fr)}
+  .clk:nth-child(3){border-inline-end:0}
+  .clk:nth-child(-n+3){border-bottom:1px solid var(--line)}
+  .perks{grid-template-columns:1fr 1fr}
+  .float{display:none}
+  .me-card{max-width:420px}
+}
+@media (max-width:680px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .hero{padding-top:40px}
+  .nav-cta{display:none}
+  .live{display:none}
+  .url{font-size:12.5px;padding:7px 10px}
+  .lights i{width:9px;height:9px}
+  .svc{grid-template-columns:1fr}
+  .s.big{grid-column:auto}
+  .row{grid-template-columns:1fr 40px;gap:10px 14px;padding:22px 0}
+  .row:hover{padding-inline:0;background:none}
+  .row .n{display:none}
+  .row .c,.row .tags{grid-column:1/-1;grid-row:auto}
+  .row .go{grid-column:2;grid-row:2;align-self:start}
+  .row .t{grid-row:2}
+  .row .thumb{display:block;grid-column:1/-1;grid-row:1;border-radius:12px;overflow:hidden;aspect-ratio:16/9;border:1px solid #2a2c30}
+  .row .thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .work,.cta{margin-inline:6px;border-radius:24px;padding:80px 0}
+  section{padding:80px 0}
+  .clocks{grid-template-columns:1fr 1fr}
+  .clk{border-bottom:1px solid var(--line)}
+  .clk:nth-child(odd){border-inline-end:1px solid var(--line)}
+  .clk:nth-child(even){border-inline-end:0}
+  .clk.me{grid-column:1/-1;border-inline-end:0}
+  .clk b{font-size:28px}
+  .perks{grid-template-columns:1fr}
+  .num b{font-size:38px}
+  .num{padding:24px 16px}
+  form{padding:22px}
+  .bi .card{padding:26px;min-height:0}
+  .peek{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo"><b>if</b><span>Ifaf Web Studio</span></a>
+    <div class="links">
+      <a href="#work" data-ar="الأعمال">Work</a>
+      <a href="#process" data-ar="كيف نعمل">Process</a>
+      <a href="#services" data-ar="الخدمات">Services</a>
+      <a href="#faq" data-ar="الأسئلة">FAQ</a>
+    </div>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-l="en" aria-pressed="true">EN</button>
+        <button type="button" data-l="ar" class="ar" aria-pressed="false">عربي</button>
+      </div>
+      <a class="btn btn-dark nav-cta" href="#contact" data-ar="عيّنة مجانية">Free sample</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="status mono"><i class="dot"></i><span data-ar="متاح لمشاريع جديدة · الهند والخليج">Available for new projects · India &amp; the Gulf</span></span>
+    <div class="hero-grid">
+      <h1 data-ar="مواقع تجعل عملاءك <span class='u'>يحجزون</span>.">Websites that get businesses <span class="u">booked</span>.</h1>
+      <div>
+        <p class="lead" data-ar="أصمم مواقع سريعة بالعربية والإنجليزية، مع حجز عبر واتساب وتجهيز لجوجل. وترى الصفحة الرئيسية لموقعك مجاناً قبل أن تدفع أي شيء.">I design fast, bilingual business websites with WhatsApp booking and Google setup. And you see your homepage free, before you pay anything.</p>
+        <div class="ctas">
+          <a class="btn btn-dark" href="#contact"><span data-ar="احصل على عيّنة مجانية">Get my free sample</span> <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="#work" data-ar="شاهد أعمالي">See my work</a>
+        </div>
+        <p class="note" data-ar="ردّ في نفس اليوم عادةً · كل شيء عبر واتساب">Usually same-day reply · everything on WhatsApp</p>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="browser" id="browser">
+        <div class="bar">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span id="urltext"></span><i class="caret"></i></div>
+          <span class="live"><i class="dot"></i>LIVE</span>
+        </div>
+        <div class="screen" id="screen"></div>
+      </div>
+      <div class="float f1"><span class="ic">ع</span><span data-ar="عربي + إنجليزي">Arabic + English</span></div>
+      <div class="float f2"><span class="ic">💬</span><span data-ar="حجز عبر واتساب">WhatsApp booking</span></div>
+      <div class="float f3"><span class="ic">⚡</span><span data-ar="سريع على الجوال">Fast on phones</span></div>
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <div class="nums">
+      <div class="num rv"><b data-count="9">0</b><span data-ar="مواقع أعمال منشورة">live business websites</span></div>
+      <div class="num rv"><b data-count="3">0</b><span data-ar="دول: الهند، قطر، عُمان">countries: India, Qatar, Oman</span></div>
+      <div class="num rv"><b data-count="60" data-suf="+">0</b><span data-ar="فيديو للعلامات التجارية">videos made for brands</span></div>
+      <div class="num rv"><b data-count="7" data-pre="~" data-unit=" days" data-unit-ar=" أيام">0</b><span data-ar="من العيّنة إلى الإطلاق">from sample to launch</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="mono" data-ar="01 — الأعمال">01 — Selected work</span><h2 data-ar="مواقع حقيقية لأعمال حقيقية.">Real websites for real businesses.</h2></div>
+      <p data-ar="سياحة في قطر، تصدير في عُمان، منتجعات وسفر ورياضة في الهند. اضغط على أي مشروع لفتح الموقع المباشر.">Tourism in Qatar, export in Oman, resorts, travel and sport in India. Click any project to open the live site.</p>
+    </div>
+    <div class="index" id="index"></div>
+  </div>
+</section>
+<div class="peek" id="peek"><img alt=""></div>
+
+<section id="process">
+  <div class="wrap proc">
+    <div>
+      <div class="sh rv" style="margin-bottom:30px"><div><span class="mono" data-ar="02 — كيف نعمل">02 — How it works</span><h2 data-ar="ترى موقعك أولاً. ثم تقرّر.">You see it first. Then you decide.</h2></div></div>
+      <div class="steps">
+        <div class="step rv"><span class="k">01</span><div><h3 data-ar="أرسل اسم نشاطك">Send me your business</h3><p data-ar="حساب إنستغرام أو موقعك الحالي أو مجرد الاسم، عبر واتساب. بدون مكالمات أو نماذج طويلة.">Your Instagram, current website or just the name, on WhatsApp. No calls, no long forms.</p></div></div>
+        <div class="step rv"><span class="k">02</span><div><h3 data-ar="استلم عيّنة مجانية">Get a free sample homepage</h3><p data-ar="أصمم صفحة رئيسية حقيقية بخدماتك وصورك وزر واتساب، وأرسل لك الرابط.">I build a real homepage with your services, photos and a WhatsApp button, and send you the link.</p></div></div>
+        <div class="step rv"><span class="k">03</span><div><h3 data-ar="أعجبك؟ ننطلق">Love it? We go live</h3><p data-ar="نُكمل الموقع معاً خلال أسبوع تقريباً. نصف المبلغ للبدء والنصف عند الإطلاق. لم يعجبك؟ لا تدفع شيئاً.">We finish the full site in about a week. Half to start, half at launch. Not for you? You owe nothing.</p></div></div>
+      </div>
+    </div>
+    <div class="phone rv" id="phone">
+      <div class="ph-top"><img class="av" src="img/ifaf.jpg" alt="Ifaf"><div><b>Ifaf · Web Studio</b><small id="phst">online</small></div></div>
+      <div class="ph-body" id="chat">
+        <div class="msg in" data-d="0">Hi! I run a desert safari company in Doha 🐪 Can you make us a website?<time>10:02</time></div>
+        <div class="msg out" data-d="1400">Of course! Send me your Instagram and I'll design your homepage for free 😊<time>10:04 ✓✓</time></div>
+        <div class="msg in" data-d="2800">@76adventure_tour<time>10:05</time></div>
+        <div class="msg out" data-d="4600"><div class="card"><img src="img/76adventure-desktop.jpg" alt=""><div>76Adventure · Private Desert Safari in Doha</div></div>Here's your sample: <span class="lnk">76adventure-doha.vercel.app</span> English + Arabic, booking straight to WhatsApp 🚀<time>16:40 ✓✓</time></div>
+        <div class="msg in" data-d="6400">Wow 😍 that's exactly what we wanted. Let's do it!<time>16:52</time></div>
+        <div class="msg out" data-d="7900">Live on <span class="lnk">76adventure.com</span> ✅ Enjoy the bookings!<time>Day 7 ✓✓</time></div>
+        <div class="typing" id="typing"><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="mono" data-ar="03 — الخدمات">03 — Services</span><h2 data-ar="ابدأ بموقع. وأضف الباقي عندما تكون جاهزاً.">Start with a website. Add the rest when you're ready.</h2></div>
+      <p data-ar="شخص واحد يفهم نشاطك، من أول رسالة حتى يوم الإطلاق. بدون وكالة وبدون وسطاء.">One person who knows your business, from the first message to launch day. No agency, no middlemen.</p>
+    </div>
+    <div class="svc">
+      <div class="s big rv"><img class="shot" src="img/76adventure-mobile.jpg" alt="76Adventure on mobile" loading="lazy"><div class="top"><span class="ico">💻</span></div><div><h3 data-ar="مواقع الأعمال">Business websites</h3><p data-ar="سريعة ومناسبة للجوال وجاهزة لجوجل، مع أزرار حجز واستفسار تصل مباشرة إلى واتساب.">Fast, mobile-first and Google-ready, with booking and enquiry buttons that land straight in your WhatsApp.</p><div class="pills"><span data-ar="عربي + إنجليزي">Arabic + English</span><span data-ar="حجز عبر واتساب">WhatsApp booking</span><span data-ar="نطاق واستضافة">Domain &amp; hosting</span><span data-ar="تحسين محركات البحث">SEO setup</span></div></div></div>
+      <div class="s rv"><div class="top"><span class="ico">🧑‍💼</span><span class="mono">02</span></div><div><h3 data-ar="مواقع العلامة الشخصية">Personal brand sites</h3><p data-ar="للمؤسسين والقادة الذين يحتاجون الثقة مع العملاء والمستثمرين والإعلام.">For founders and leaders who need trust with buyers, investors and media.</p></div></div>
+      <div class="s rv"><div class="top"><span class="ico">📍</span><span class="mono">03</span></div><div><h3 data-ar="الظهور على جوجل">Google presence</h3><p data-ar="ملف جوجل التجاري وSearch Console وإعلانات جوجل، ليجدك الناس أولاً.">Google Business Profile, Search Console and Google Ads, so locals find you first.</p></div></div>
+      <div class="s rv"><div class="top"><span class="ico">🎬</span><span class="mono">04</span></div><div><h3 data-ar="فيديو وريلز بالذكاء الاصطناعي">AI video &amp; reels</h3><p data-ar="فيديوهات ترويجية وريلز ومونتاج احترافي. أكثر من 60 فيديو.">Promo videos, branded reels and pro editing. 60+ delivered.</p></div></div>
+      <div class="s rv"><div class="top"><span class="ico">📱</span><span class="mono">05</span></div><div><h3 data-ar="إدارة السوشيال ميديا">Social media</h3><p data-ar="تخطيط المحتوى والنشر وإدارة الحسابات.">Content planning, posting and account management.</p></div></div>
+      <div class="s rv"><div class="top"><span class="ico">🏨</span><span class="mono">06</span></div><div><h3 data-ar="منصات الحجز وقوائم QR">OTA &amp; QR menus</h3><p data-ar="إدراج على Airbnb وAgoda وBooking.com، وقوائم QR للمطاعم.">Airbnb, Agoda and Booking.com listings, plus QR menus for restaurants.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="mono" data-ar="04 — ثنائي اللغة">04 — Bilingual by default</span><h2 data-ar="العربية بشكل صحيح. من اليمين إلى اليسار.">Arabic done properly. Right to left.</h2></div>
+      <p data-ar="كثير من العائلات في الخليج تبحث بالعربية. موقعك يتحدث لغتهم، بتصميم حقيقي من اليمين إلى اليسار، وليس ترجمة آلية. جرّب زر «عربي» في الأعلى.">Many Gulf families search in Arabic. Your site speaks to them with a real right-to-left layout, not a machine translation. Try the عربي button at the top.</p>
+    </div>
+    <div class="bi">
+      <div class="card rv"><span class="mono">English</span><div class="big">Private desert safari in Doha. Book in 30 seconds.</div><div class="mini"><span>Book on WhatsApp</span></div></div>
+      <div class="card ar rv"><span class="mono">العربية</span><div class="big">رحلة سفاري خاصة في الدوحة. احجز خلال 30 ثانية.</div><div class="mini"><span>احجز عبر واتساب</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="mono" data-ar="05 — عن بُعد">05 — Remote, not distant</span><h2 data-ar="بلد مختلف. نفس يوم العمل.">Different country. Same working day.</h2></div>
+      <p data-ar="أنا في مانيبال، الهند، أسبق الخليج بساعة ونصف إلى ساعتين ونصف فقط. راسلني في يومك وسأرد عادةً في نفس اليوم.">I'm in Manipal, India, just 1.5 to 2.5 hours ahead of the Gulf. Message me during your day and I'll usually reply the same day.</p>
+    </div>
+    <div class="clocks rv">
+      <div class="clk me"><span class="mono" data-ar="مانيبال · أنا">Manipal · me</span><b data-tz="Asia/Kolkata">--:--</b></div>
+      <div class="clk"><span class="mono" data-ar="دبي">Dubai</span><b data-tz="Asia/Dubai">--:--</b></div>
+      <div class="clk"><span class="mono" data-ar="مسقط">Muscat</span><b data-tz="Asia/Muscat">--:--</b></div>
+      <div class="clk"><span class="mono" data-ar="الدوحة">Doha</span><b data-tz="Asia/Qatar">--:--</b></div>
+      <div class="clk"><span class="mono" data-ar="الرياض">Riyadh</span><b data-tz="Asia/Riyadh">--:--</b></div>
+    </div>
+    <div class="perks">
+      <div class="perk rv"><b data-ar="💬 أونلاين 100%">💬 100% online</b><span data-ar="كل شيء عبر واتساب. بدون اجتماعات.">Everything on WhatsApp. No meetings needed.</span></div>
+      <div class="perk rv"><b data-ar="👀 شاهد قبل أن تدفع">👀 See before you pay</b><span data-ar="العيّنة المجانية تأتي أولاً، دائماً.">Your free sample comes first, always.</span></div>
+      <div class="perk rv"><b data-ar="✌️ الدفع على دفعتين">✌️ Pay in two parts</b><span data-ar="النصف للبدء، والنصف عند الإطلاق.">Half to start, half when you're happy and live.</span></div>
+      <div class="perk rv"><b data-ar="🛡️ أمان إضافي">🛡️ Extra safety</b><span data-ar="تفضّل منصة؟ اطلب عبر <a href='https://www.fiverr.com/mohammedifaf406/build-a-booking-website-for-your-tour-safari-or-travel-business' target='_blank' rel='noopener' style='text-decoration:underline'>Fiverr</a>.">Prefer a platform? Order on <a href="https://www.fiverr.com/mohammedifaf406/build-a-booking-website-for-your-tour-safari-or-travel-business" target="_blank" rel="noopener" style="text-decoration:underline">Fiverr</a>.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:20px">
+  <div class="wrap about">
+    <div class="me-card rv"><img src="img/ifaf.jpg" alt="Mohammed Ifaf"><div class="tag"><i class="dot"></i><span data-ar="يرد بسرعة">Replies fast</span></div></div>
+    <div class="rv">
+      <span class="mono" style="color:var(--muted);display:block;margin-bottom:14px" data-ar="06 — من أنا">06 — About</span>
+      <h2 data-ar="مرحباً، أنا إفاف. شخص واحد لكل حضورك الرقمي.">Hi, I'm Ifaf. One person for your whole online presence.</h2>
+      <p data-ar="أعمل مع شركات السياحة والتصدير في الخليج، والمنتجعات ودور الضيافة وشركات السفر والتاكسي والقادة والعلامات الرياضية. أبني مواقع احترافية بسرعة باستخدام أدوات حديثة بالذكاء الاصطناعي، ثم أساعدك على البقاء ظاهراً عبر جوجل والسوشيال ميديا والفيديو.">I work with Gulf tourism companies and exporters, resorts, guest houses, travel and taxi operators, corporate leaders and sports brands. I build professional websites fast with modern AI-assisted tools, then help you stay visible with Google, social media and video.</p>
+      <p data-ar="تتحدث معي مباشرة، من أول رسالة حتى يوم الإطلاق.">You talk to me directly, from the first message to launch day.</p>
+      <div class="niches"><span data-ar="🏜️ سياحة">🏜️ Tours</span><span data-ar="🏨 منتجعات">🏨 Resorts</span><span data-ar="🚕 سفر وتاكسي">🚕 Travel &amp; taxi</span><span data-ar="💇‍♀️ صالونات">💇‍♀️ Salons</span><span data-ar="🍰 مخابز">🍰 Bakeries</span><span data-ar="🚢 تصدير">🚢 Export</span><span data-ar="🏋️ نوادي">🏋️ Gyms</span><span data-ar="🩺 عيادات">🩺 Clinics</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh rv"><div><span class="mono" data-ar="07 — أسئلة">07 — FAQ</span><h2 data-ar="أسئلة؟ إليك الإجابات.">Questions? Answers.</h2></div></div>
+    <div class="faq">
+      <details><summary><span data-ar="أين أنت؟ هل تعمل مع أعمال في الإمارات أو عُمان أو قطر؟">Where are you based? Can you work with my business in the UAE, Oman or Qatar?</span><span class="pm">+</span></summary><p data-ar="أنا في مانيبال، الهند، وأعمل أونلاين بالكامل مع أعمال في الخليج. الهند تسبق الإمارات وعُمان بساعة ونصف فقط، لذا نحن تقريباً في نفس يوم العمل.">I'm based in Manipal, India and work fully online with businesses in the Gulf. India is only 1.5 hours ahead of the UAE and Oman, so we're in almost the same working day.</p></details>
+      <details><summary><span data-ar="هل العيّنة مجانية فعلاً؟">Is the sample homepage really free?</span><span class="pm">+</span></summary><p data-ar="نعم. أصمم صفحة رئيسية لنشاطك لترى الأسلوب والتصميم. إذا لم ترغب في المتابعة، لا تدفع شيئاً.">Yes. I design a sample homepage for your business so you can see the style and layout. If you don't want to continue, you owe nothing.</p></details>
+      <details><summary><span data-ar="هل يمكن أن يكون موقعي بالعربية والإنجليزية؟">Can my website be in Arabic and English?</span><span class="pm">+</span></summary><p data-ar="نعم. أبني مواقع ثنائية اللغة بتصميم عربي صحيح من اليمين إلى اليسار وزر بسيط لتغيير اللغة، تماماً مثل هذا الموقع.">Yes. I build bilingual websites with a proper right-to-left Arabic layout and a simple language switch, just like this site.</p></details>
+      <details><summary><span data-ar="هل يستطيع العملاء الطلب أو الحجز عبر واتساب؟">Can customers order or book through WhatsApp?</span><span class="pm">+</span></summary><p data-ar="نعم. نماذج الطلب والحجز ترسل تفاصيل العميل مباشرة إلى واتسابك، فتستمر في التعامل مع الطلبات كما تفعل الآن.">Yes. Order and booking forms send the customer's details straight to your WhatsApp, so you keep handling orders the way you already do.</p></details>
+      <details><summary><span data-ar="كم يستغرق العمل؟">How long does it take?</span><span class="pm">+</span></summary><p data-ar="معظم المواقع تكون جاهزة خلال أسبوع تقريباً بعد موافقتك على العيّنة وإرسال صورك وتفاصيلك.">Most business websites are ready within about a week after you approve the sample and send your photos and details.</p></details>
+      <details><summary><span data-ar="هل أحتاج لشراء نطاق واستضافة؟">Do I need to buy a domain or hosting?</span><span class="pm">+</span></summary><p data-ar="لا. أجهّز لك النطاق والاستضافة، ليكون لموقعك عنوانه الخاص ويعمل بسرعة على الجوال.">No. I set up the domain and hosting for you, so your site has its own address and works fast on phones.</p></details>
+      <details><summary><span data-ar="كيف يتم الدفع؟">How does payment work?</span><span class="pm">+</span></summary><p data-ar="نصف المبلغ عند البدء والباقي عند إطلاق الموقع ورضاك عنه. ويمكنك الطلب عبر Fiverr إذا كنت تفضّل حماية المنصة.">Half when we start and the rest when your website is live and you're happy. You can also order through Fiverr if you prefer platform protection.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap cta-grid">
+    <div>
+      <span class="mono" style="color:#7d8188;display:block;margin-bottom:14px" data-ar="08 — تواصل">08 — Contact</span>
+      <h2 data-ar="لنصنع موقعك.">Let's make yours.</h2>
+      <p class="sub" data-ar="أخبرني عن نشاطك وسأصمم صفحتك الرئيسية مجاناً. الرد عادةً في نفس اليوم.">Tell me about your business and I'll design your homepage for free. Usually same-day reply.</p>
+      <div class="contacts">
+        <a href="https://wa.me/919686044715" target="_blank" rel="noopener"><b>💬 +91 96860 44715</b><span>WhatsApp</span></a>
+        <a href="mailto:mohammedifaf522@gmail.com"><b>✉️ mohammedifaf522@gmail.com</b><span data-ar="البريد">Email</span></a>
+        <a href="https://www.instagram.com/ifafwebstudio/" target="_blank" rel="noopener"><b>📸 @ifafwebstudio</b><span>Instagram</span></a>
+        <a href="Mohammed-Ifaf-Portfolio.pdf" target="_blank"><b>📄 <span data-ar="ملف الأعمال PDF">Portfolio PDF</span></b><span data-ar="تحميل">Download</span></a>
+      </div>
+    </div>
+    <form id="brief">
+      <h3 data-ar="احصل على عيّنتك المجانية ✨">Get my free sample ✨</h3>
+      <p class="fs" data-ar="30 ثانية. يفتح واتساب ورسالتك جاهزة.">30 seconds. Opens WhatsApp with your message ready.</p>
+      <label for="bn" data-ar="اسم النشاط">Business name</label><input id="bn" required>
+      <label for="bl" data-ar="إنستغرام / الموقع">Instagram / website</label><input id="bl" placeholder="@yourbusiness">
+      <label data-ar="نوع النشاط">Type of business</label>
+      <div class="types">
+        <label><input type="radio" name="t" value="Tours" checked><span data-ar="🏜️ سياحة">🏜️ Tours</span></label>
+        <label><input type="radio" name="t" value="Salon"><span data-ar="💇‍♀️ صالون">💇‍♀️ Salon</span></label>
+        <label><input type="radio" name="t" value="Food"><span data-ar="🍰 طعام">🍰 Food</span></label>
+        <label><input type="radio" name="t" value="Shop"><span data-ar="🛍️ متجر">🛍️ Shop</span></label>
+        <label><input type="radio" name="t" value="Gym / clinic"><span data-ar="🏋️ نادي / عيادة">🏋️ Gym / clinic</span></label>
+        <label><input type="radio" name="t" value="Other"><span data-ar="✨ أخرى">✨ Other</span></label>
+      </div>
+      <label for="bc" data-ar="الدولة">Country</label>
+      <select id="bc"><option>UAE</option><option>Oman</option><option>Qatar</option><option>Saudi Arabia</option><option>Kuwait</option><option>Bahrain</option><option>India</option><option>Other</option></select>
+      <button class="btn btn-acc" type="submit"><span data-ar="أرسل عبر واتساب">Send on WhatsApp</span> <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </form>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Mohammed Ifaf · Ifaf Web Studio</span><span data-ar="مانيبال، الهند 🇮🇳 · نبني لـ 🇶🇦 🇴🇲 🇦🇪 🇸🇦 🇰🇼 🇧🇭">Manipal, India 🇮🇳 · Building for 🇶🇦 🇴🇲 🇦🇪 🇸🇦 🇰🇼 🇧🇭</span></div></footer>
+
+<a class="wa-float" href="https://wa.me/919686044715?text=Hi%20Ifaf!%20I%27d%20like%20a%20free%20sample%20homepage%20for%20my%20business." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zM20.5 3.5C18.2 1.2 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.4z"/></svg></a>
+
+<script>
+(function(){
+  var sites=[
+    {d:"76adventure.com",n:"76Adventure",p:"Doha, Qatar 🇶🇦",pa:"الدوحة، قطر 🇶🇦",c:"Desert safaris & tours",ca:"رحلات سفاري وجولات",img:"76adventure-desktop.jpg",tags:["Arabic + English","WhatsApp booking"],g:1},
+    {d:"gulfpridellc.com",n:"Gulf Pride Fisheries",p:"Oman 🇴🇲",pa:"عُمان 🇴🇲",c:"Seafood export",ca:"تصدير المأكولات البحرية",img:"gulfpridellc-desktop.jpg",tags:["Arabic + English","Product catalogue"],g:1},
+    {d:"mushtaqahmedgoa.com",n:"Mushtaq Ahmed",p:"Goa, India 🇮🇳",pa:"غوا، الهند 🇮🇳",c:"CEO personal brand",ca:"علامة شخصية لرئيس تنفيذي",img:"mushtaqahmedgoa-desktop.jpg",tags:["Personal brand","Media"]},
+    {d:"indianscapital.com",n:"Indians Capital",p:"Goa, India 🇮🇳",pa:"غوا، الهند 🇮🇳",c:"Cricket team",ca:"فريق كريكيت",img:"indianscapital-desktop.jpg",tags:["Sports","Squad & fixtures"]},
+    {d:"islandresort.in",n:"Island Resort",p:"Udupi, India 🇮🇳",pa:"أودوبي، الهند 🇮🇳",c:"Beach resort",ca:"منتجع شاطئي",img:"islandresort-desktop.jpg",tags:["Hospitality","Enquiries"]},
+    {d:"goldenriveria.com",n:"Golden Riveria",p:"Karnataka, India 🇮🇳",pa:"كارناتاكا، الهند 🇮🇳",c:"Resort & weddings",ca:"منتجع وحفلات زفاف",img:"goldenriveria-desktop.jpg",tags:["Weddings","Gallery"]},
+    {d:"ambguesthouse.com",n:"AMB Guest House",p:"Mangalore, India 🇮🇳",pa:"مانغالور، الهند 🇮🇳",c:"Guest house",ca:"دار ضيافة",img:"ambguesthouse-desktop.jpg",tags:["Rooms","Direct booking"]},
+    {d:"eastwesttravelsmanipal.com",n:"East West Travels",p:"Manipal, India 🇮🇳",pa:"مانيبال، الهند 🇮🇳",c:"Travel agency",ca:"وكالة سفر",img:"eastwesttravelsmanipal-desktop.jpg",tags:["Tours","Taxi"]},
+    {d:"eazyridecab.com",n:"Eazy Ride Cab",p:"Karnataka, India 🇮🇳",pa:"كارناتاكا، الهند 🇮🇳",c:"Taxi service",ca:"خدمة تاكسي",img:"eazyridecab-desktop.jpg",tags:["Taxi","Call & WhatsApp"]}
+  ];
+  var lang="en";
+  try{lang=localStorage.getItem("ifaf-lang")||"en"}catch(e){}
+  try{var q=new URLSearchParams(location.search).get("lang");if(q==="ar"||q==="en")lang=q}catch(e){}
+  var screen=document.getElementById("screen"),chips=document.getElementById("chips"),urlEl=document.getElementById("urltext");
+  sites.forEach(function(s,i){
+    var im=new Image();im.src="img/"+s.img;im.alt=s.n+" website";im.loading=i?"lazy":"eager";screen.appendChild(im);
+    var b=document.createElement("button");b.className="chip";b.type="button";b.textContent=s.n;b.onclick=function(){show(i,true)};chips.appendChild(b);
+  });
+  var cur=-1,timer,typer;
+  function type(txt){clearInterval(typer);var k=0;urlEl.textContent="";typer=setInterval(function(){urlEl.textContent=txt.slice(0,++k);if(k>=txt.length)clearInterval(typer)},45)}
+  function show(i,user){
+    if(i===cur)return;cur=i;
+    [].forEach.call(screen.children,function(im,j){im.classList.toggle("on",j===i)});
+    [].forEach.call(chips.children,function(c,j){c.classList.toggle("on",j===i)});
+    type(sites[i].d);
+    clearTimeout(timer);timer=setTimeout(function(){show((cur+1)%sites.length)},user?7000:4200);
+  }
+  show(0);
+
+  // Work index
+  var idx=document.getElementById("index"),peek=document.getElementById("peek"),pimg=peek.querySelector("img");
+  function arrow(){return '<span class="go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M8 7h9v9"/></svg></span>'}
+  function renderIndex(){
+    idx.innerHTML=sites.map(function(s,i){
+      return '<a class="row rv in" href="https://'+s.d+'" target="_blank" rel="noopener" data-i="'+i+'">'+
+        '<span class="thumb"><img src="img/'+s.img+'" alt="" loading="lazy"></span>'+
+        '<span class="n">'+String(i+1).padStart(2,"0")+'</span>'+
+        '<span class="t">'+s.n+'<small>'+s.d+'</small></span>'+
+        '<span class="c">'+(lang==="ar"?s.pa+' · '+s.ca:s.p+' · '+s.c)+'</span>'+
+        '<span class="tags">'+s.tags.map(function(t,j){return '<span'+(s.g&&j===0?' class="g"':'')+'>'+t+'</span>'}).join("")+'</span>'+arrow()+'</a>';
+    }).join("");
+  }
+  renderIndex();
+  var px=0,py=0,tx=0,ty=0,raf;
+  idx.addEventListener("mousemove",function(e){tx=e.clientX;ty=e.clientY;if(!raf)loop()});
+  idx.addEventListener("mouseover",function(e){var r=e.target.closest(".row");if(!r)return;if(!peek.classList.contains("on")){px=tx=e.clientX;py=ty=e.clientY;peek.style.left=px+"px";peek.style.top=py+"px"}pimg.src="img/"+sites[r.dataset.i].img;peek.classList.add("on")});
+  idx.addEventListener("mouseleave",function(){peek.classList.remove("on")});
+  function loop(){px+=(tx-px)*.18;py+=(ty-py)*.18;peek.style.left=px+"px";peek.style.top=py+"px";raf=Math.abs(tx-px)+Math.abs(ty-py)>.5?requestAnimationFrame(loop):0}
+
+  // Language
+  var tr=[].slice.call(document.querySelectorAll("[data-ar]"));
+  tr.forEach(function(e){e.dataset.en=e.innerHTML});
+  function setLang(l){
+    lang=l;document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
+    tr.forEach(function(e){e.innerHTML=l==="ar"?e.dataset.ar:e.dataset.en});
+    document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l===l)});
+    renderIndex();countAll(true);
+    try{localStorage.setItem("ifaf-lang",l)}catch(e){}
+  }
+  document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
+
+  // Counters
+  var counted=false;
+  function fmt(el,v){var u=lang==="ar"?(el.dataset.unitAr||""):(el.dataset.unit||"");return (el.dataset.pre||"")+v+(el.dataset.suf||"")+u}
+  function countAll(instant){
+    document.querySelectorAll("[data-count]").forEach(function(el){
+      var to=+el.dataset.count;
+      if(instant||!counted&&false){el.textContent=fmt(el,to);return}
+      var t0=performance.now();(function f(t){var p=Math.min(1,(t-t0)/1300);el.textContent=fmt(el,Math.round(to*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(f)})(t0);
+    });
+  }
+  if(lang!=="en")setLang(lang);
+
+  // Reveal + counters + chat
+  var chatDone=false;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    e.target.classList.add("in");
+    if(e.target.classList.contains("num")&&!counted){counted=true;countAll(false)}
+    if(e.target.id==="phone"&&!chatDone){chatDone=true;playChat()}
+    io.unobserve(e.target);
+  })},{threshold:.18});
+  document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+
+  function playChat(){
+    var ms=[].slice.call(document.querySelectorAll("#chat .msg")),ty=document.getElementById("typing"),st=document.getElementById("phst"),body=document.getElementById("chat");
+    ms.forEach(function(m){
+      var d=+m.dataset.d;
+      if(m.classList.contains("out")){setTimeout(function(){ty.classList.add("show");st.textContent="typing…";body.appendChild(ty)},Math.max(0,d-900))}
+      setTimeout(function(){ty.classList.remove("show");st.textContent="online";m.classList.add("show");body.scrollTop=body.scrollHeight},d+300);
+    });
+  }
+
+  // Clocks
+  function tick(){document.querySelectorAll("[data-tz]").forEach(function(el){try{el.textContent=new Intl.DateTimeFormat("en-GB",{hour:"2-digit",minute:"2-digit",timeZone:el.dataset.tz}).format(new Date())}catch(e){}})}
+  tick();setInterval(tick,20000);
+
+  // Nav border + browser scale
+  var nav=document.getElementById("nav"),br=document.getElementById("browser");
+  function onScroll(){
+    nav.classList.toggle("scrolled",scrollY>10);peek.classList.remove("on");
+    if(innerWidth>980){var r=br.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight-r.top)/(innerHeight*.9)));br.style.transform="scale("+(.94+.06*p)+")"}else br.style.transform="none";
+  }
+  addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+  // Brief form
+  document.getElementById("brief").addEventListener("submit",function(e){
+    e.preventDefault();
+    var t=(document.querySelector("input[name=t]:checked")||{}).value||"";
+    var msg="Hi Ifaf! I'd like a free sample homepage.\n\nBusiness: "+document.getElementById("bn").value+"\nInstagram / website: "+(document.getElementById("bl").value||"-")+"\nType: "+t+"\nCountry: "+document.getElementById("bc").value;
+    window.open("https://wa.me/919686044715?text="+encodeURIComponent(msg),"_blank","noopener");
+  });
+  document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
